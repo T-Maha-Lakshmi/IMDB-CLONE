@@ -20,6 +20,7 @@ function App() {
         return String(movie.id)!==String(movieObj.id)
       })
       setWatchList(filteredWatchlist)
+      localStorage.setItem('moviesApp', JSON.stringify(filteredWatchlist))
       console.log(filteredWatchlist)
     }
     useEffect(()=>{
